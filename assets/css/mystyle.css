@@ -1,0 +1,429 @@
+/* navbar section */
+body{  
+   background-color: #fff;
+ background-image: url("../../img/extras/bg-white-2.avif");
+ /* backdrop-filter: blur(1.5px);*/
+  /*margin-top: 0%;*/
+}
+.containers{
+ /* Add the blur effect */
+ filter: blur(8px);
+ -webkit-filter: blur(8px);
+
+}
+
+.white-logo{
+  height: 30px; width: auto;
+
+}
+
+/* welcome section */
+#sectionWelcome{
+    /*min-height:100vh;*/
+    margin-top: 5% !important;
+    margin-bottom: 2%;
+    
+
+  }
+.sectionWelcomeContainer{
+  border: 25px solid #212529; 
+  background-color:rgba(255, 255, 255, 0.9); 
+  min-height:100%; 
+  padding: 15%; 
+  color:black; 
+  border-radius:120px 120px 0% 0% ;
+   /*box-shadow: 15px 15px white;*/
+
+}
+.sectionWelcomeButtonStart{
+  border: 1px solid #212529; 
+}
+#sectionSkills{
+    /*min-height:100vh;
+    padding-top: 15% !important;  border: 1px solid #212529;margin-bottom: 5%;*/
+    padding-top: 8%;
+    padding-bottom: 1%;
+
+  }
+#sectionWorks{
+  padding-top: 8%;
+  padding-bottom: 0%;
+  margin-bottom: 100px;
+}
+
+myname {
+    font-size: 3vw;
+    color:black;
+    font-style: 'Montserrat';
+    font-weight: bold !important;
+    padding:0%;
+    margin-top: 0% !important;
+    
+}
+.logo{
+    max-width:59px ;
+    max-height:38px ;
+}
+
+
+  p{
+    font-style: 'Montserrat';
+    font-size: 1.3vw;
+    font-weight: normal !important;
+    margin-top: 0% !important;
+  }
+@media only screen and (max-width: 1200px) {
+    p{font-size: 1.6vw;}
+}
+@media only screen and (max-width: 850px) {
+    p{font-size: 1.7vw;}
+}
+@media only screen and (max-width: 768px) { /*col-sm breakpoint*/
+  p{font-size: 1.8vw;}
+
+}
+@media only screen and (max-width: 576px) { /*col breakpoint*/
+  p{font-size: 3vw;}
+  
+}
+
+
+.optionSkills { 
+    cursor: pointer; 
+    color:gray;
+
+}
+.optionSkills:hover { 
+    cursor: pointer; 
+    color: black !important;
+    font-style: 'Montserrat';
+}
+/* skill section */
+.skillHeadText{
+  background-color:#212529; min-height: 50px; border-radius: 50px 50px 0 0; padding-top: 1%;
+}
+.skillBodyBorder{
+
+  border: 25px solid #212529; padding: 2%;  background-color:rgba(255, 255, 255, 0.9); 
+}
+.SkillListContainer{
+  margin-bottom: 2%;
+}
+.terminalSkillsHead{
+  background-color: #D8D8D8;  border-radius: 50px 50px 0 0;
+}
+.containerSkills{
+    background-color: #212529; 
+    border-radius: 0 0 50px 50px;
+    color: green;
+    min-height:250px;
+}
+.terminalContentParent{
+  padding-left: 2%;
+  padding-right: 2%;
+}
+.terminalContentChild{
+  font-family: 'VT323', monospace !important;
+
+}
+.dothid {
+  margin-left: 1px;
+  height: 15px;
+  width: 15px;
+  background-color: #D8D8D8;
+  border-radius: 50%;
+}
+.dot {
+  margin-left:3px;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+}
+.dot.red{background-color: #F7615A;}
+.dot.yellow{background-color: #FEBC2D;}
+.dot.green{background-color: #27C83F;}
+
+.ico-hand{
+    visibility: hidden;
+    color:black !important;
+  }
+/* technology section Design Start*/
+  section-titles{
+    font-style: 'Montserrat';
+    font-size: 2vw;
+    font-weight: normal !important;
+    margin-top: 0% !important;
+
+  }
+  .techLogo{
+    /*width: 100%;
+    height: 100%;
+    padding: 10%;*/
+    max-width: 70%;
+    height: auto;
+    padding: 5%;
+  }
+  .langLogobox{
+    max-width: 70%;
+    height: auto;
+    padding: 5%;
+
+  }
+
+  @media only screen and (max-width: 576px) { /*col breakpoint*/
+    
+  
+  }
+  @media only screen and (max-width: 768px) { /*col-sm breakpoint*/
+    
+  
+  }
+/* work section */
+.perWorkContainer p{
+  padding-top: 1%;
+  /*text-indent: 50px;*/
+}
+.perWorkContainer h3{
+ /* text-align: center;*/
+}
+.perWorkContainer{
+  margin-bottom: 10%;
+}
+.perWorkImageContainer{
+  overflow-y: scroll; max-height:280px; 
+}
+
+  .img-works{
+    object-position: 0% 0%;
+    object-fit: cover;
+    width: 100%;
+    max-height: 40vh;
+  }
+  .powLogo{
+    max-width: 100px;
+    height: auto;
+  }
+  .powLogoBox{
+    max-height: 30px;
+    width: auto;
+  }
+/* work section Design End*/
+/* certificates start*/
+.carousel-item img{
+  max-height: 450px;
+  width: auto;
+}
+/* technology section Tunnel Design Start*/
+section-titles{
+  color:#fff;
+  font-size: 2vw;
+}
+@media only screen and (max-width: 576px) { /*col-sm breakpoint*/
+  section-titles{
+    font-size: 2.7vw; 
+  }
+}
+@media only screen and (max-width: 380px) { /*col-sm breakpoint*/
+  section-titles{
+    font-size: 4vw; 
+  }
+}
+.logo-container{
+  background-color:rgba(255, 255, 255, 1); 
+  border-radius: 2% 2% / 60% 60%; 
+  /*z-index: -1 !important;*/
+  
+
+}
+.tunnelStartCircle{
+  background-color:#fff; 
+  min-height:40px; 
+  border-radius: 50% 50% / 50% 50%; 
+  padding-top: 0px;
+  box-shadow: inset 0 0 10px hsla(0, 0%, 3%, 0.61);
+}
+.tunnelStartNeck{
+  background: linear-gradient(180deg, transparent 50%, #212529 50%); 
+  max-width:25%; 
+  min-height:40px;
+}
+#id-section-title{
+  background-color:#212529; 
+}
+.tunnelBody{
+  background-color:#212529; 
+  padding: 8%; 
+  padding-top: 2%;  
+  padding-bottom: 5%;
+  /*border: 25px solid #212529;  */
+
+
+}
+.tunnelBody.odd{
+  border-radius: 0% 5% / 20% 20%;
+}
+.tunnelBody.even{
+  border-radius: 5% 0% / 20% 20%;
+}
+.tunnelNeck{
+  background-color: #212529; max-width:25%; min-height:20px;
+}
+.tunnelEndNeck{
+  background: linear-gradient(180deg, #212529 50%, transparent 50%); 
+  max-width:25%; 
+  min-height:40px;
+}
+.tunnelEndCircle{
+  background-color:#fff;  
+  min-height:40px; 
+  border-radius: 50% 50% / 50% 50%; 
+  padding-top: 0px;
+  box-shadow: inset 0 0 10px hsla(0, 0%, 3%, 0.61);
+}
+.doubleTunnel{
+  background: linear-gradient(180deg, #212529 50%, transparent 50%);  max-width:25%; min-height:20px;
+}
+.doubleTunnelUp{
+  background: linear-gradient(180deg, transparent 50%, #212529 50%);  max-width:25%; min-height:20px;
+}
+.tunnelBarBottom{
+  background-color:#212529; min-height: 50px;  border-radius: 0 0 0 0; /*box-shadow: 15px 3px #212529;  box-shadow: 5px 10px 0px 10px white inset;*/
+}
+.tunnelRocketContainer{
+  margin: 0%; padding-top: 0%; visibility: visible;
+}
+.tunnelRocketFire{
+  max-width:25%; min-height:20px;
+}
+.tunnelRocketFireImage{
+  transform: rotate(3.142rad); width:100%;
+}
+
+/* technology section Tunnel Design end*/
+/* technology section animation Start*/
+  .sectionTechnologies, .mycursor{
+    cursor:url(../../img/hand-cursor.png), auto;
+    /*cursor:-moz-grabbing;*/
+  }
+  #follow {
+    position: absolute;
+    text-align: center;
+    height:50px;
+    width:50px;
+    z-index: 9;
+  }
+  #mycursor{
+    height:50px;
+    width:50px;
+    /*background-image: url("../../img/ball-animation-cursor.gif");
+    background-color: red;*/
+    border-radius: 50%;
+    position: relative;
+    /*position: absolute;
+    display:none;*/
+    transition-duration: 0.7s;
+    transition-timing-function: ease-in;
+    z-index: 11;
+    
+  }
+  #ball_msg{
+    color:#fff; 
+    margin: 0; 
+    margin-bottom: 10%; font-size: 9px;
+  }
+  /* technology section animation End*/
+
+/* work section Start*/
+.workContainer{
+  background-color: #212529; 
+  padding: 3%; 
+  padding-top: 1%;
+  border-radius: 50px 50px 0 0;
+  /*border-top-left-radius: 40px;
+  border-top-right-radius: 40px;*/
+}
+
+
+/* work section End*/
+/* Black and white Classes Start*/
+
+.bw-img {
+  /*filter: grayscale(100%);*/
+}
+.bw-img:hover {
+  filter: none !important;
+  transform: scale(1.1);
+  
+}
+#mycursor {
+  filter: grayscale(100%);
+}
+#mycursor:active {
+  transform: scale(1.4);
+}
+/* Black and white Classes End*/
+/* Manga Bubble Start*/
+  .tooltip-top {
+    /* Modify size here: */
+    --size: 100%;
+    --padding: 10px;
+   
+    background-color: #212529;
+    border-radius: 20px 20px 20px 20px;
+    position: relative;
+    width: calc(var(--size) - var(--padding));
+    height: calc(var(--size) / 2);
+
+    padding: var(--padding);
+  }
+  
+  .tooltip-top:after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    background-color: #212529;
+    height: 16px;
+    width: 16px;
+  }
+  /* Manga Bubble End*/
+
+
+  /*animation backgrounds*/
+  /*.circles li{
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background: rgba(145, 51, 51, 0.2);
+    animation: animate 10s linear  infinite;
+  
+    
+}
+  .circles li:nth-child(10){
+    left: 85%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+    animation-duration: 11s;
+}
+
+
+
+@keyframes animate {
+
+    0%{
+        transform: translateY(0) rotate(0deg);
+        opacity: 0.5;
+        border-radius: 0;
+    }
+
+    100%{
+        transform: translateY(-300px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
+
+}*/
