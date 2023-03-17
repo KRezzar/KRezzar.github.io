@@ -1,7 +1,9 @@
+/* version 3*/
+
 /* navbar section */
 body{  
    background-color: #fff;
- background-image: url("../../img/extras/bg-white-2.jpg");
+ /*background-image: url("../../img/extras/bg-white-2.jpg");*/
  /* backdrop-filter: blur(1.5px);*/
   /*margin-top: 0%;*/
 }
@@ -91,6 +93,9 @@ myname {
 .optionSkills { 
     cursor: pointer; 
     color:gray;
+    word-wrap: break-word;    
+    white-space: nowrap;
+    padding-top: 5px;
 
 }
 .optionSkills:hover { 
@@ -104,10 +109,11 @@ myname {
 }
 .skillBodyBorder{
 
-  border: 25px solid #212529; padding: 2%;  background-color:rgba(255, 255, 255, 0.9); 
+  /*border: 2px solid #212529; */padding: 2%;  /*background-color:rgba(222, 230, 222, 0.514);*/ 
 }
 .SkillListContainer{
   margin-bottom: 2%;
+  margin-top: 0px;
 }
 .terminalSkillsHead{
   background-color: #D8D8D8;  border-radius: 50px 50px 0 0;
@@ -124,6 +130,7 @@ myname {
 }
 .terminalContentChild{
   font-family: 'VT323', monospace !important;
+  text-align: left;
 
 }
 .dothid {

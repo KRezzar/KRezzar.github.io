@@ -1,12 +1,12 @@
 let textContent = '{' +
-                    '"s_1": {"title": "Web Development","description": "Develop, Troubleshoot and custumize a Website from the scratch using PHP, HTML, CSS, JS, and different kinds of frameworks and plugins."},'+
-                    '"s_2":{"title": "UI/UX Web Design","description": "Can Produce a Web design with an excellent user interface."},'+
-                    '"s_3":{"title": "Graphic Design","description": "Create logos, banners, web page designs, and photo manipulation."},'+
-                    '"s_4":{"title": "Video Editing","description": "Edit a video presentations with different transitions and effects."},'+
-                    '"s_5":{"title": "Audio Editing","description": "Enhance your audio files to have a better quality, removes noise and adds some cool effects."},'+
-                    '"s_6":{"title": "Wordpress","description": "I am knowledgeable in creating a template from a scratch, creating a child theme, manipulating some functions, etc. I am familiar with Elementor, woocommerce, SiteOrigin and many more plugins"},'+
-                    '"s_7":{"title": "Shopify","description": "If you’re looking on starting an e-commerce website, I can help you with that with Shopify. Shopify is an excellent software if you want to sell your products online, I do personally recommend it if you want to start your online store."},'+
-                    '"s_8":{"title": "Hubspot CMS","description": "Want to build a website in HubSpot? I am a certified HubSpot CMS developer and can help you in developing your website using this platform."}'+      
+                    '"s_1": {"title": "Web Development","description": "As a web developer, I create customized, user-friendly websites that are optimized for performance, speed, and search engine visibility."},'+
+                    '"s_2":{"title": "UI/UX Web Design","description": "I design intuitive, user-centric interfaces that provide seamless experiences and delight users, making sure every interaction is intuitive and enjoyable."},'+
+                    '"s_3":{"title": "Graphic Design","description": "With my graphic design skills, I can turn your vision into stunning visuals that grab attention, communicate your message effectively, and elevate your brand identity. In addition, I have a keen eye for detail and can enhance your photos to achieve the desired look, whether that\'s retouching, color grading, or adding creative effects."},'+
+                    '"s_4":{"title": "Video Editing","description": "I can bring your footage to life with my video editing skills, using creative techniques to tell your story and capture your audience\'s attention."},'+
+                    '"s_5":{"title": "Audio Editing","description": "As a multimedia specialist, I have the skills to synchronize audio and visual elements perfectly, Enhance your audio files to have a better quality, removes noise and adds some cool effects."},'+
+                    '"s_6":{"title": "Wordpress","description": "As a skilled WordPress developer, I have a deep understanding of the platform and can create custom WordPress solutions that are fast, secure, and scalable. In addition, I am knowledgeable in creating a template from a scratch, creating a child theme, manipulating some functions, etc. I am familiar with Elementor, woocommerce, SiteOrigin and many more plugins"},'+
+                    '"s_7":{"title": "Shopify","description": "As a Shopify developer, I create user-friendly, high-converting ecommerce websites that are optimized for performance, speed, and search engine visibility, helping you grow your online business."},'+
+                    '"s_8":{"title": "Hubspot CMS","description": "With my HubSpot developer skills, I can build powerful integrations and custom solutions that streamline your marketing, sales, and customer service operations, driving growth and boosting efficiency."}'+      
                     '}';
 
  // onload start  
@@ -58,12 +58,12 @@ window.onload = function(){
     // certificate carousel
    
     //ball animation start
-    var switchDrag =false;
+    /*var switchDrag =false;
     var startPosLeft =  $("#tunnelStartCircle").offset().left;
     var startPosTop =  $("#tunnelStartCircle").offset().top;
     var clickCounter =0;
     console.log(startPosLeft+" - "+ startPosTop);
-    /*$("#mycursor").css({ //circle animation
+    $("#mycursor").css({ //circle animation
         left:startPosLeft+130,
         top: startPosTop-140
     });*/
@@ -132,10 +132,9 @@ window.onload = function(){
             data: JSON.stringify(data),
             contentType: 'application/json'
         }).done(function() {
+            clearForm();
             $('#myNotification').toast('show');
-            $('#ContactFormModal').modal('hide');
-          
-            console.log('Your mail is sent!');
+            console.log('Your mail is sent!');  
         }).fail(function(error) {
             console.log('Oops... ' + JSON.stringify(error));
         });
@@ -237,8 +236,8 @@ function fnMouseOut(thisID){
 function DisplayText(thisID){
     const jsonToText = JSON.parse(textContent);
     $("#s_title").html(jsonToText[thisID]['title']);
-    $("#s_description").html(jsonToText[thisID]['description']);
-    $("#s_description").html('<p id="clone_s_description">'+jsonToText[thisID]['description']+'</p>');
+    $("#s_description").html("--"+jsonToText[thisID]['description']);
+    $("#s_description").html('<p id="clone_s_description">'+"-- "+jsonToText[thisID]['description']+'</p>');
 
 }
 function fnDisplaySkillDescription(thisID){ 
