@@ -91,6 +91,8 @@
 .kr-active{
 
   color:#ffc800!important;
+  text-shadow: 2px 2px rgba(255,255,255,0.3);
+  transition: all 0.66s ease-in;
 }
 .noise {
   
@@ -11424,8 +11426,14 @@ p {
 #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
   
   /*color: #ffc800; krkr active link border:1px solid white;*/
+ 
 }
-
+#mainNav .navbar-nav .nav-item .nav-link:hover {
+  color: #ffc800;
+  text-shadow: 2px 2px rgba(255,255,255,0.3);
+  font-size: 0.953rem;
+  transition: all 0.66s ease-in;
+}
 @media (min-width: 992px) {
   #mainNav {
     padding-top: 1.5rem;
@@ -11473,12 +11481,18 @@ header.masthead {
   background-position: center center;
   background-size: cover;
 }
+header.masthead .masthead-subheading kr-mh{
+  text-shadow: 2px 2px rgba(255,255,255,0.2);
+  color:var(--bs-primary);
+}
 header.masthead .masthead-subheading {
   font-size: 1.5rem;
   font-style: italic;
   line-height: 1.5rem;
   margin-bottom: 25px;
   font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  /*text-shadow: 2px 2px rgba(255,255,255,0.2);
+  color:var(--bs-primary);*/
 }
 header.masthead .masthead-heading {
   font-size: 3.25rem;
@@ -11831,14 +11845,15 @@ header.masthead .masthead-heading {
   position: relative;
   border: solid 3px #fff;
   margin: 20px;
-  transform: translateY(-40px) rotate(-7deg);
-  box-shadow: 3px 35px 8px -10px rgba(0, 0, 0, 0.3);
+  transform: translateY(-40px) rotate(-2deg);
+  box-shadow: 3px 45px 8px -10px rgba(0, 0, 0, 0.4);
   transition: all 0.50s ease-in;
 }
 .krrt2:hover {
   transform: translateY(0) rotate(0);
   box-shadow: 3px 15px 8px -10px rgba(0, 0, 0, 0.3);
 }
+
 
 .krrt3 {
   border-top-left-radius: 437px 340px;
@@ -11853,8 +11868,8 @@ header.masthead .masthead-heading {
   margin-left: auto;
   margin-right: auto;
   max-width: 500px;
-  width: 100%;
-  transform: translateY(-40px) rotate(-2deg);
+  width: 80%;
+  transform: translateY(-40px) rotate(0deg);
   box-shadow: 53px 35px 8px -10px rgba(0, 0, 0, 0.3);
   transition: all 0.80s ease-in;
 }
@@ -11868,6 +11883,10 @@ header.masthead .masthead-heading {
   box-shadow: 3px 15px 8px -10px rgba(0, 0, 0, 0.3);
   max-width: 2000px;
 }/**/
+.krrt3 h2.section-heading, .krrt3 .section-heading.h2{
+
+  font-size: 3vh !important;
+}
 section#portfolio {
   
   border:1px dashed white;
